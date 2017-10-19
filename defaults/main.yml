@@ -14,3 +14,6 @@ privoxy_service_state: started
 
 # Service enabled on startup: yes or no
 privoxy_service_enabled: yes
+
+privoxy_permit_access_from_hosts:
+  - localhost

@@ -1071,6 +1071,11 @@ enforce-blocks 0
 #        permit-access  [::ffff:192.0.2.0]/120
 #
 #
+
+{% for permit_access in privoxy_permit_access_from_hosts %}
+permit-access  {{permit_access}}
+{% endfor %}
+
 #  4.8. buffer-limit
 #  ==================
 #
